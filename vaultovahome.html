@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaultopia Wallet</title>
+  <link rel="stylesheet" href="vaultovahome.css" />
+</head>
+<body>
+  <header class="wallet-header">
+    <div class="header-top">
+      <h1>Vaultopia Wallet</h1>
+      <a href="vaultopiasettings.html" class="home-button"><button class="settings-button">⚙️</button></a>
+    </div>
+    <nav class="nav-top">
+      <a href="vaultovahome.html" class="home-button"><button>🏠 Home</button></a>
+      <a href="vaultovabuy.html" class="home-button"><button>➕ Buy</button></a>
+      <a href="vaultovasell.html" class="home-button"><button>💸 Sell</button></a>
+      <a href="vaultovasend.html" class="home-button"><button>📤 Send</button></a>
+      <a href="vaultovareceive.html" class="home-button"><button>📥 Receive</button></a>
+    </nav>
+  </header>
+
+  <main class="wallet-main">
+    <section class="wallet-balance">
+      <p>Total Balance</p>
+      <h2>$0.00</h2>
+    </section>
+
+    <section class="wallet-tokens">
+      <h3>Your Assets</h3>
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/btc.png" alt="BTC" />
+        <div>
+          <strong>Bitcoin</strong>
+          <p>0.00 BTC</p>
+          <p>Bitcoin (BTC): <span id="btc-price">Loading...</span></p>
+        </div>
+        <canvas id="btc-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/eth.png" alt="ETH" />
+        <div>
+          <strong>Ethereum</strong>
+          <p>0.00 ETH</p>
+          <p>Ethereum (ETH): <span id="eth-price">Loading...</span></p>
+        </div>
+        <canvas id="eth-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+      
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/vaultopia1.png" alt="VLT" />
+        <div>
+          <strong>Vaultopia Token</strong>
+          <p>0.00 VLT</p>
+          <p>Vaultopia Token (VLT): <span id="vlt-price">$1.25 (Mock)</span></p>
+        </div>
+        <span>$0.00</span>
+      </div>
+
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/tether.png" alt="USDT" />
+        <div>
+          <strong>Tether</strong>
+          <p>0.00 USDT</p>
+          <p>Tether (USDT): <span id="usdt-price">Loading...</span></p>
+        </div>
+        <canvas id="usdt-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+      
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/xrp.png" alt="XRP" />
+        <div>
+          <strong>XRP</strong>
+          <p>0.00 XRP</p>
+          <p>XRP: <span id="xrp-price">Loading...</span></p>
+        </div>
+        <canvas id="xrp-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+      
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/bnb.png" alt="BNB" />
+        <div>
+          <strong>BNB</strong>
+          <p>0.00 BNB</p>
+          <p>BNB: <span id="bnb-price">Loading...</span></p>
+        </div>
+        <canvas id="bnb-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+      
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/solana.png" alt="SOL" />
+        <div>
+          <strong>Solana</strong>
+          <p>0.00 SOL</p>
+          <p>Solana (SOL): <span id="sol-price">Loading...</span></p>
+        </div>
+        <canvas id="sol-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/usdc.png" alt="SOL" />
+        <div>
+          <strong>USDC </strong>
+          <p>0.00 USDC</p>
+          <p>USDC (USDC): <span id="usd-price">Loading...</span></p>
+        </div>
+        <canvas id="usd-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+
+      <div class="token">
+        <img src="Vaultova(Vaultopia)/Images/dogecoin.png" alt="SOL" />
+        <div>
+          <strong>Dogecoin</strong>
+          <p>0.00 DOGE</p>
+          <p>Dogecoin (DOGE): <span id="doge-price">Loading...</span></p>
+        </div>
+        <canvas id="doge-chart" width="100" height="50"></canvas>
+        <span>$0.00</span>
+      </div>
+    </section>
+  </main>
+  <script src="coingecko.js"></script>
+</body>
+</html>
